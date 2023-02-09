@@ -1,0 +1,11 @@
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.536);
+}
+
+.navbar-toggler {
+    background-color: white;
+}
