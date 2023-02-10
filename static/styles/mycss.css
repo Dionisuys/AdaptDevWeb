@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: Raleway, serif;
+    background: linear-gradient(160deg, #0051A0 0%, #FFFFFF 90%);
+}
+
 .nav-link {
     color: white;
 }
@@ -8,4 +15,83 @@
 
 .navbar-toggler {
     background-color: white;
+}
+
+.sitebar {
+    color: black;
+    background: linear-gradient(190deg, #0051A0 0%, #FFFFFF 95%);
+}
+
+.card {
+    color: black;
+    font-family: Raleway, serif;
+    background: linear-gradient(190deg, #0051A0 0%, #FFFFFF 95%);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide-text {
+    color: black;
+    margin: auto auto;
+    /*центрирование содержимого контейнера*/
+}
+
+.footer-text {
+    color: white;
+    margin: auto auto;
+    /*центрирование содержимого контейнера*/
+}
+
+footer,
+.btn-secondary {
+    background: var(--bs-body-color)
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
 }
