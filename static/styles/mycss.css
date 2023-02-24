@@ -5,6 +5,18 @@ body {
     background: linear-gradient(160deg, #0051A0 0%, #FFFFFF 90%);
 }
 
+body.dark-theme {
+    font-family: Raleway, serif;
+    background: linear-gradient(160deg, #0051A0 0%, #FFFFFF 90%);
+    filter: grayscale(50%);
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
 .nav-link {
     color: white;
 }
@@ -87,11 +99,5 @@ footer,
 
     100% {
         transform: scale3d(1, 1, 1);
-    }
-}
-
-@media (max-width: 755px) {
-    .carousel-indicators {
-        display: none;
     }
 }
